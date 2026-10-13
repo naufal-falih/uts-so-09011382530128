@@ -28,3 +28,4 @@ tar -tzf "$DEST/$ARSIFNAMA" > /dev/null
 # 6. Catat proses backup ke file log
 UKURAN=$(du -h "$DEST/$ARSIFNAMA" | awk '{print $1}')
 echo "$(date +"%Y-%m-%d %T") | $ARSIFNAMA | $JUMLAH | $UKURAN" >> "$LOG"
+# Update terakhir modul backup
